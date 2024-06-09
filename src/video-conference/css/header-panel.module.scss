@@ -1,0 +1,62 @@
+@import "./colors.scss";
+
+.HeaderPanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.actionsSection {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.recordingIndicator {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 1px 5px;
+}
+
+.redCircle {
+  width: 7.5px;
+  height: 7.5px;
+  background-color: $red;
+  border-radius: 50%;
+  margin-left: 3px;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.iconButton:hover {
+  color: #ddd;
+}
+
+.titleSection {
+  text-align: right;
+}
+
+.caseTitle {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.caseNumber {
+  margin: 0.5rem 0;
+  font-size: 0.75rem;
+  color: #bbb;
+}

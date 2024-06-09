@@ -1,0 +1,79 @@
+@import "./colors.scss";
+
+.border {
+  border: 1px $green solid;
+}
+
+.sidePanel {
+  @extend .border;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 115px;
+  padding: 1rem 10px 1rem 0;
+  background-color: $dark-gray;
+  border-radius: 15px 0px 0px 15px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.symbolWrapper {
+  height: 16%;
+}
+
+.symbolImage {
+  width: 45px;
+  height: 53px;
+}
+
+.buttonsContainer {
+  @extend .border;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% + 1px);
+  border-radius: 0px 20px 20px 0px;
+  background-color: #161f2d;
+  height: 60%;
+  justify-content: center;
+  border-left: black !important;
+}
+
+.sidePanelButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  color: white;
+  font-size: 0.7rem;
+  position: relative;
+}
+
+.iconBadge {
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  background-color: white;
+  color: $gray;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  width: 16px;
+  height: 16px;
+  font-weight: 800;
+}
+
+.exitButton {
+  background: $gray;
+  color: $red;
+  border: none;
+  padding: 10px 0;
+  cursor: pointer;
+  margin-top: auto;
+  font-size: 0.7rem;
+  border-radius: 20px;
+  width: 70%;
+}

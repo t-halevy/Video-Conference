@@ -1,0 +1,62 @@
+@import "./colors.scss";
+
+.controlPanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.2rem;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.liveInfo {
+  display: flex;
+  align-items: center;
+}
+
+.liveLabel {
+  background-color: $red;
+  padding: 0.1rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: white;
+  margin-right: 0.6rem;
+}
+
+.timer {
+  font-size: 0.7rem;
+  color: white;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.controlButton {
+  background-color: $gray;
+  border: none;
+  color: white;
+  font-size: 0.7rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  width: 80px;
+  height: 30px;
+  justify-content: center;
+  gap: 3px;
+}
+
+.controlButton:hover {
+  color: #ddd;
+}
+
+.controlButtonText {
+  font-size: 0.6rem;
+}

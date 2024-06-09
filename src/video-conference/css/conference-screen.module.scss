@@ -1,0 +1,41 @@
+@import "./colors.scss";
+
+.conferenceScreen {
+  display: flex;
+  background-color: $black;
+  padding: 0.5rem 0;
+  justify-content: space-between;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 2rem 0 2rem;
+  flex: 1;
+  max-height: 100%;
+  overflow-y: auto;
+  min-height: calc(100vh - 2rem);
+}
+
+.judgesSection,
+.partiesSection {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0.4rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.judgeParticipant {
+  flex: 1 0 auto;
+  max-width: calc(100% / var(--judges-columns));
+  min-width: 245px;
+}
+
+.partyParticipant {
+  flex: 1 0 auto;
+  max-width: calc(100% / var(--parties-columns));
+  min-width: 245px;
+}
